@@ -1,0 +1,170 @@
+body{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+:root{
+    --primary:#DFE8CC;
+    --secondary: #E8AA42;
+    --third: #F9F7F7;
+    --btn: #E84545;
+    --btn2: #A91079;
+}
+
+h1 , h2 , h3 , p{
+    font-family: 'Poppins', sans-serif;;
+
+}
+
+#special h1{
+  font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:  5px ;
+    padding-top: 4%;
+}
+
+/* Navbar */
+#navbar{
+    background-color: var(--third);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Home */
+#home .btn{
+    background-color:var(--btn2) ;
+    color: white;
+}
+
+/* Products*/
+#products h1{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:  5px ;
+    padding-top: 4%;
+}
+#prodcuts .card a{
+    transition: ease-in 0.4s;
+    height: 400px;
+}
+#products .card a:hover{
+    height: 250px;
+}
+/* Service */
+#special .sps{
+  font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:  5px ;
+    padding-top: 4%;
+}
+/* Testimonials*/
+#testimonails .testi{
+  font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:  5px ;
+    padding-top: 4%;
+}
+
+/*------Responsive Navbar---------*/
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 0px;
+    transition: all 0.25s;
+    position: relative;
+    border: none;
+    margin: 0 21px 17px 21px;
+    display: none;
+
+    
+  
+  }
+
+.top_ham ,  .mid_ham , .bottom_ham{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.5s;
+  
+}
+
+
+.top_ham{
+    transform: translateY(7px);
+  }
+  
+  .bottom_ham{
+    transform: translateY(14px);
+  }
+  
+  
+  .open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  .open .top_ham{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+.open .mid_ham{
+    display: none;
+  }
+  
+.open .bottom_ham{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+.small{
+        
+    position: fixed;
+    top: 64px; bottom: 200px; left: 0;
+    background-color: rgba(51, 38, 38, 0.925);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+    display: none;
+
+
+}
+
+.small  a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 300;
+
+
+}
+
+.small ul li{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    margin: 15px ;
+    padding-bottom: 20px;
+}
